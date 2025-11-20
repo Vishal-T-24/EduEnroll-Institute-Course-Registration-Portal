@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registeration</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body background="Background Picture.jpg">
+
+    <div class="one">
+        <h1>Dashboard</h1>
+        <br>
+        <ul>
+            <li><button id="btn1" onclick="register(),opa()">Register 📝</button></li>
+            <br>
+            <li><button id="btn2" onclick="showcourses(),opa(),show2()">What are the Courses? 🤔</button></a></li>
+            <br>
+            <li><button id="btn3" onclick="showenrolledstudents(),show1(),opa()">Enrolled Students👥</button></a></li>
+        </ul>
+    </div>
+
+    <center>
+        <h1>Welcome to EduEnroll – The Course Registration Portal of xyz Institute.</h1>
+    </center>
+
+    <div id="overlay"></div>
+
+
+    <div id="popup">
+        <h1>Kickstart Your Career 🚀</h1>
+
+        <form action="http://localhost:8080/student_details" method="post">
+            <label for="name">Enter Name</label>
+            <br>
+            <input type="text" name="name" class="input"><br><br>
+
+            <label for="email">Enter Email I'd</label>
+            <br>
+            <input type="text" name="email" class="input"><br><br>
+
+            <label for="courseselected">Choose Course</label></td>
+            <br>
+            <select name="courseselected" class="input1">
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="C/C++">C/C++</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Gen AI">Gen AI</option>
+                <option value="FullStack (Java/Python)">FullStack (Java/Python)</option>
+            </select><br><br><br>
+            <center>
+            <button type="submit" class="submit">Submit</button>
+            </center>
+            
+        </form>
+    </div>
+
+     <div id="stds">
+    <table border="1" align="center" style="text-align: center; background-color: black;">
+        <tr id="tableheader" style="background-color: rgb(107, 107, 158);">
+            <td width="100px"><h3>id</h3></td>
+            <td width="100px"><h3>name</h3></td>
+            <td width="100px"><h3>email</h3></td>
+            <td width="150px"><h3>courseselected</h3></td>
+        </tr>
+
+        <tbody align="center" id="tablebody2" style="background-color:rgb(107, 107, 158) ; color: black;"></tbody>
+    </table>
+    </div>
+
+    <div id="co">
+    <table align="center" border="1" style="text-align: center; background-color: black;">
+        <tr id="tableheader" style="background-color:  rgb(107, 107, 158);">
+            <td width="100px"><h3>Cid</h3></td>
+            <td width="150px"><h3 >Coursename</h3></td>
+            <td width="100px"><h3>trainer</h3></td>
+            <td width="150px"><h3>Durationinweeks</h3></td>
+        </tr>
+
+         <tbody align="center" id="tablebody" style="background-color: rgb(107, 107, 158) ; color: black;"></tbody>
+    </table>
+    </div>
+
+
+    <script src="Style.Js"></script>
+
+</body>
+
+</html>
